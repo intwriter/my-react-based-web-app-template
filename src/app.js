@@ -8,5 +8,5 @@ export default function App() {
         <ThemeProvider theme={apptheme}>
             <ExampleComponent></ExampleComponent>
         </ThemeProvider>
-    )
+    );
 }
