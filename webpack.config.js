@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: "production",
+    performance: {
+        hints: false,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Welcome',
