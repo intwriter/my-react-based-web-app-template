@@ -13,6 +13,11 @@ module.exports = {
             title: 'Welcome',
         }),
     ],
+    resolve: {
+        alias: {
+            app_components_path: path.resolve(__dirname, 'src/components/')
+        },
+    },
     entry: glob.sync('./src/**/*.js'),
     module: {
         rules: [
