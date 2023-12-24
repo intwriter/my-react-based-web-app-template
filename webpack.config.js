@@ -1,4 +1,3 @@
-const glob = require('glob');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
@@ -18,7 +17,9 @@ module.exports = {
             app_components_path: path.resolve(__dirname, 'src/components/')
         },
     },
-    entry: glob.sync('./src/**/*.js'),
+    entry: {
+        index: './src/index.js'
+    },
     module: {
         rules: [
             {
@@ -45,8 +46,11 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'main.min.js',
+        filename: 'index.min.js',
         path: path.resolve(__dirname, 'public'),
         clean: true
+    },
+    devServer: {
+        open: true,
     }
 };
