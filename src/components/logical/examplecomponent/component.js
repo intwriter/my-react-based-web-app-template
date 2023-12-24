@@ -1,13 +1,12 @@
 import React from 'react';
 
-import StyledExampleButtonComponent from 'app_components_path/styled/styledexamplebuttoncomponent';
+import StyledExampleButtonComponent from 'app_components_path/styled/styledexamplebuttoncomponent/component';
+import useExampleHook from './hooks/examplehook';
 
 export default function ExampleComponent() {
-    function buttonClick() {
-        alert("Button was clicked")
-    }
+    const { onClick } = useExampleHook();
 
     return (
-        <StyledExampleButtonComponent onClick={buttonClick}>Example button</StyledExampleButtonComponent>
+        <StyledExampleButtonComponent onClick={onClick}>Example button</StyledExampleButtonComponent>
     );
 }
