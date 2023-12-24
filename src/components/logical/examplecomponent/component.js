@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledButtonComponent from 'app_components_path/styled/styledbuttoncomponent';
+import StyledExampleButtonComponent from 'app_components_path/styled/styledexamplebuttoncomponent';
 
 export default function ExampleComponent() {
     function buttonClick() {
@@ -7,6 +7,6 @@ export default function ExampleComponent() {
     }
 
     return (
-        <StyledButtonComponent onClick={buttonClick}>Example button</StyledButtonComponent>
+        <StyledExampleButtonComponent onClick={buttonClick}>Example button</StyledExampleButtonComponent>
     );
 }
