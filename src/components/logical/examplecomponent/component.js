@@ -1,4 +1,5 @@
 import React from 'react';
+
 import StyledExampleButtonComponent from 'app_components_path/styled/styledexamplebuttoncomponent';
 
 export default function ExampleComponent() {
