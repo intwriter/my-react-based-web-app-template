@@ -7,4 +7,4 @@
 3. Start the project with ```npm run start```
 4. Learn the ins and outs of the template, and begin developing your web app with it
 
-**Note**: This template is still in development, and might be unstable, so use it at your own risk
+**Note**: This template is still in early development, and might be unstable, so use it at your own risk
