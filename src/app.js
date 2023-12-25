@@ -1,12 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { apptheme } from './assets/styles/themes/apptheme';
+import theme from './assets/styles/themes/default/theme';
 import ExampleComponent from 'app_components_path/logical/examplecomponent/component';
 
 export default function App() {
     return (
-        <ThemeProvider theme={apptheme}>
+        <ThemeProvider theme={theme}>
             <ExampleComponent></ExampleComponent>
         </ThemeProvider>
     );
