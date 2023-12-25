@@ -6,3 +6,5 @@
 2. Run ```npm install``` in the downloaded template code, to install all of its third-party dependencies
 3. Start the project with ```npm run start```
 4. Learn the ins and outs of the template, and begin developing your web app with it
+
+**Note**: This template is still in development, and might be unstable, so use it at your own risk
