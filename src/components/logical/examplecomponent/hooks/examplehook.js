@@ -1,8 +1,8 @@
 export default function useExampleHook() {
     
-    function buttonClick() {
+    function onClickHandler() {
         alert("Button was clicked")
     }
 
-    return {onClick: buttonClick};
+    return { onClick: onClickHandler };
 }
