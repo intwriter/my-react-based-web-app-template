@@ -38,19 +38,6 @@ module.exports = {
             }
         ]
     },
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new TerserPlugin({
-                terserOptions: {
-                    format: {
-                        comments: false
-                    }
-                },
-                extractComments: false
-            })
-        ]
-    },
     output: {
         filename: 'index.min.js',
         path: path.resolve(__dirname, 'public'),
