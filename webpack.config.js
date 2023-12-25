@@ -14,7 +14,8 @@ module.exports = {
     ],
     resolve: {
         alias: {
-            app_components_path: path.resolve(__dirname, 'src/components/')
+            app_components_path: path.resolve(__dirname, 'src/components/'),
+            app_themes_path: path.resolve(__dirname, 'src/assets/styles/themes/')
         },
     },
     entry: {
@@ -41,7 +42,12 @@ module.exports = {
         minimize: true,
         minimizer: [
             new TerserPlugin({
-                extractComments: false,
+                terserOptions: {
+                    format: {
+                        comments: false
+                    }
+                },
+                extractComments: false
             })
         ]
     },
