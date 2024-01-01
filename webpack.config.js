@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -15,7 +14,8 @@ module.exports = {
     resolve: {
         alias: {
             app_components_path: path.resolve(__dirname, 'src/components/'),
-            app_themes_path: path.resolve(__dirname, 'src/assets/styles/themes/')
+            app_themes_path: path.resolve(__dirname, 'src/assets/styles/themes/'),
+            app_hooks_path: path.resolve(__dirname, 'src/hooks/')
         },
     },
     entry: {
@@ -39,7 +39,7 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'index.min.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'public'),
         clean: true
     },
