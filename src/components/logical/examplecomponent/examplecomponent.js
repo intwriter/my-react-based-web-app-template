@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StyledExampleButtonComponent from 'app_components_path/styled/styledexamplebuttoncomponent/component';
+import StyledExampleButtonComponent from 'app_components_path/styled/styledexamplebuttoncomponent/styledexamplebuttoncomponent';
 import useExampleHook from './hooks/examplehook';
 
 export default function ExampleComponent() {
