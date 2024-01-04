@@ -12,6 +12,7 @@ module.exports = {
         }),
     ],
     resolve: {
+        extensions: ['.tsx', '.ts', '.jsx', '.js'],
         alias: {
             app_components_path: path.resolve(__dirname, 'src/components/'),
             app_themes_path: path.resolve(__dirname, 'src/assets/styles/themes/'),
@@ -19,19 +20,20 @@ module.exports = {
         },
     },
     entry: {
-        index: './src/index.js'
+        index: './src/index.tsx'
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(tsx|ts|jsx|js)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {
                         presets: [
                             '@babel/preset-env',
-                            '@babel/preset-react'
+                            '@babel/preset-react',
+                            '@babel/preset-typescript'
                         ]
                     }
                 }
