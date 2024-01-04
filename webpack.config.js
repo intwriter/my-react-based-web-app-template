@@ -39,9 +39,9 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'public'),
-        clean: true
+        clean: true,
+        filename: 'assets/[contenthash].js',
+        path: path.resolve(__dirname, 'public')
     },
     devServer: {
         open: true,
