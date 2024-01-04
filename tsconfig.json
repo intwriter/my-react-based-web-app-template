@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
         "jsx": "react",
+        "lib": [
+            "DOM"
+        ],
         "paths": {
             "app_components_path/*": [
                 "./src/components/*"
