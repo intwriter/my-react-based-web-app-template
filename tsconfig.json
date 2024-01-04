@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "paths": {
+            "app_components_path/*": [
+                "./src/components/*"
+            ],
+            "app_themes_path/*": [
+                "./src/assets/styles/themes/*"
+            ],
+            "app_hooks_path/*": [
+                "./src/hooks/*"
+            ]
+        }
+    }
+}
